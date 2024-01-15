@@ -28,7 +28,7 @@ while ($true) {
     if (Test-Path $sourceFile -PathType Leaf) {
         # Copy the file to the destination folder        
         Copy-Item -Path $sourceFile -Destination $destinationFile -Force
-        Write-Host "\nFile copied successfully. New file name: $newFileName"
+        Write-Host "File copied successfully. New file name: $newFileName"
 
         # Sleep for the specified delay
         Start-Sleep -Seconds $delayInSeconds
